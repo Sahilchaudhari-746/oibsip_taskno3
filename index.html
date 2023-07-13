@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="heading">
+  <h2>Temperature Conversion </h2>
+  <i class="fa-solid fa-temperature-three-quarters" style="
+  font-size: 150px;
+  color: white;
+  margin-left: 22px;
+  margin-top: 38px;
+"></i>
+  </div>
+  <div class="container">
+    <div class="inp">
+    <label for="celsius">Celsius(°C)</label>
+    <input type="number" id="celsius" placeholder="Enter Celsius" oninput="convertTemperature(this.value, 'celsius')">
+      </div>
+      <div class="inp">
+    <label for="fahrenheit">Fahrenheit(°F)</label>
+    <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" oninput="convertTemperature(this.value, 'fahrenheit')">
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
